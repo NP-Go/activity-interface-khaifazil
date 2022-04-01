@@ -1,5 +1,11 @@
 package main
 
-//Declare Interface
+//declare List
+type list []*game
 
-//create methods for print
+//declare method for List Print
+func (l list) print() {
+	for _, item := range l {
+		item.print()
+	}
+}
