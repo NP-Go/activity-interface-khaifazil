@@ -1,7 +1,11 @@
 package main
 
+type printer interface {
+	print()
+}
+
 //declare List
-type list []*game
+type list []printer
 
 //declare method for List Print
 func (l list) print() {

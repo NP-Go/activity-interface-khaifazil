@@ -35,9 +35,8 @@ func main() {
 		price: 80,
 	}
 
-	var items []*game
-	items = append(items, &game1, &game2, &game3)
+	var store list
+	store = append(store, &game1, &game2, &game3, &book1, &book2, &computerAccessories1, &computerAccessories2, &computerAccessories3)
 
-	my := list(items)
-	my.print()
+	store.print()
 }
